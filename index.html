@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-    <style>
-     body {
-      background-color: linen;
-     }
-     h1 {
-      color: maroon;
-      margin-left: 40px;
-     } 
-    </style>
-  </head>
-  <body>
-   <h2>
-     hello world!
-   </h2>
-   <h1>
-     second header
-   </h1>
-  </body>
+<html> 
+	<head> 
+		<title>test</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/> 
+		div.queryResultContainer {
+			<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+			<script type="text/javascript">
+				$.getJSON('http://anyorigin.com/get?url=joshuajolly.github.io&callback=?', function(data){
+					$('#output').html(data.contents);
+					alert(data.contents);
+				});
+			</script>
+		}
+	</head> 
+	<body> 
+		<div id="queryResultContainer">
+			<p>Hello World</p>
+		</div>
+	</body> 
 </html>
